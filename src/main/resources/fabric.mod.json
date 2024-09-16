@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sefat",
+	"version": "1.0.0",
+	"name": "Sefat",
+	"description": "Sword Enchantments For Axes and Tridents",
+	"authors": [
+		"TheCoolJ14"
+	],
+	"contact": {
+		"homepage": "https://github.com/TheCOOLJ14",
+		"sources": "https://github.com/TheCOOLJ14/Sefat"
+	},
+	"license": "CC BY-ND",
+	"icon": "assets/sefat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.thecoolj14.sefat.Sefat"
+		],
+		"client": [
+			"net.thecoolj14.sefat.client.SefatClient"
+		],
+		"fabric-datagen": [
+			"net.thecoolj14.sefat.SefatDataGenerator"
+		]
+	},
+	"mixins": [
+		"sefat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
